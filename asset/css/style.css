@@ -21,6 +21,10 @@ body {
 header {
   background-color: lightcoral;
 }
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+}
 /* main content */
 
 main {
