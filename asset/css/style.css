@@ -69,7 +69,7 @@ nav {
 #nav-toggle {
   display: none;
 }
-.nav {
+.nav-toggle-label {
   font-size: 2rem;
 }
 /* main content */
@@ -80,9 +80,17 @@ main {
 }
 
 /* footer */
-
-footer {
-  background-color: orange;
+#social-networks {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0;
+  text-align: center;
+  list-style-type: none;
+}
+#social-networks i {
+  font-size: 160%;
+  color: #3a3a3a;
+  padding: 5%;
 }
 /* media query: tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
