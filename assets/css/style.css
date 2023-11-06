@@ -1,23 +1,24 @@
 /* Google fonts import */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap");
 
-/*asterisk wildcard selector to override default styles added by the browser*/
+/* Asterisk wildcard selector to override default styles added by the browser */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-/* general styles */
+
+/* General styles */
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  /* Generic project styles */
   color: #3a3a3a;
-  font-family: "lato", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
-/* header */
-
+/* Header */
 header {
   background-color: #ffffff;
   padding: 0 1rem;
@@ -29,28 +30,34 @@ header {
   justify-content: space-between;
   align-items: baseline;
 }
+
 header a {
   text-decoration: none;
   color: inherit;
 }
+
 h1 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #252525;
 }
+
 #menu {
   font-size: 110%;
   letter-spacing: 4px;
   list-style-type: none;
 }
+
 #menu > li {
   margin-bottom: 1em;
 }
+
 .active {
   border-bottom: 1px solid #3a3a3a;
 }
-/* navbar style with dropdown toggle*/
+
+/* Navbar styles with dropdown toggle */
 nav {
   position: absolute;
   background-color: #ffffff;
@@ -66,35 +73,47 @@ nav {
 #nav-toggle:checked ~ nav {
   display: block;
 }
+
 #nav-toggle {
   display: none;
 }
+
 .nav-toggle-label {
   font-size: 2rem;
 }
-/* main content */
+
+/* Main content */
 main {
-  background-color: lightblue;
+  /* Make main element take up any surplus space to push footer down */
   flex: 1 0 auto;
   margin-top: 47px;
 }
+/* hero */
+#hero {
+  height: 600px;
+  width: 100%;
 
-/* footer */
+  background: url("../images/hero-image.webp") no-repeat center center/cover;
+}
+
+/* Footer */
 #social-networks {
+  text-align: center;
+  padding: 20px 0;
   display: flex;
   justify-content: space-evenly;
-  padding: 20px 0;
-  text-align: center;
   list-style-type: none;
 }
+
 #social-networks i {
   font-size: 160%;
-  color: #3a3a3a;
   padding: 5%;
+  color: #3a3a3a;
 }
-/* media query: tablets and larger (768px and up)*/
+
+/* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
-  /* header*/
+  /* Header */
   nav {
     display: block;
     position: relative;
@@ -102,12 +121,15 @@ main {
     width: fit-content;
     padding-right: 1rem;
   }
+
   #menu {
     display: flex;
   }
+
   #menu > li {
-    padding: 1rem;
+    padding-left: 1rem;
   }
+
   .nav-toggle-label {
     display: none;
   }
@@ -117,6 +139,7 @@ main {
     line-height: 75px;
     margin: 0 0.5rem;
   }
+
   /* Main content */
   main {
     /* Push main content down to accommodate larger header */
