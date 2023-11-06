@@ -161,6 +161,13 @@ main {
   align-items: center;
   justify-content: center;
 }
+/* gallery page*/
+#photos image {
+  width: 100%;
+  line-height: 1em;
+}
+#photos {
+  line-height: 0;
 
 /* Footer */
 #social-networks {
@@ -177,6 +184,14 @@ main {
   color: #3a3a3a;
 }
 
+/* media query:large or landscape(576px and up)*/
+@media screen and (min-width: 576) {
+  #photo{
+    column-count: 2;
+    column-gap: 0;
+  }
+
+}
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
   /* Header */
@@ -236,11 +251,19 @@ main {
     align-self: flex-end;
   }
 }
+/* Gallery*/
+#photos{
+  column-count: 3;
+}
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
   #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
+  }
+  /*Gallery*/
+  #photos{
+    column-count: 4;
   }
 }
 
