@@ -107,8 +107,10 @@ main {
   padding-top: 40px;
   padding-left: 10px;
 }
-#cover-text > h2, #cover-text > h3 {
+#cover-text > h2,
+#cover-text > h3 {
   color: #ffffff;
+}
 /* Footer */
 #social-networks {
   text-align: center;
@@ -123,7 +125,31 @@ main {
   padding: 5%;
   color: #3a3a3a;
 }
+/* Reasons section */
+#reasons {
+    width: 90%;
+    margin: 20px auto;
+}
 
+#reasons h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
+}
+
+#benefits-physical > div,
+#benefits-mental > div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#benefits p {
+    padding: 0 20px;
+}
+
+#benefits hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
   /* Header */
@@ -159,8 +185,8 @@ main {
     margin-top: 79px;
   }
 }
-/* hero*/
-#cover-text{
+/* hero image*/
+#cover-text {
   width: 300px;
   right: 50px;
 }
